@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Comparaison par Indice</title>
+    <link rel="stylesheet" href="css\pie_style.css">
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+</head>
+<body>
+    <nav>
+        <a href="index.html" class="nav-button">Bar Plot</a>
+    </nav>
+    
+    <h2>Répartition des scores par Indice</h2>
+
+    <div class="controls">
+        <label>Sélectionnez les pays à comparer :</label>
+        <div class="search-box">
+            <input type="text" id="country-search" placeholder="Rechercher un pays...">
+        </div>
+        <div id="toggle-container" class="toggle-list">
+            </div>
+    </div>
+
+    <div id="tooltip" class="tooltip"></div>
+    
+    <div id="charts-wrapper">
+        <div class="chart-box">
+            <h3>Global Cybersecurity Index (GCI)</h3>
+            <div id="chart-GCI"></div>
+        </div>
+        <div class="chart-box">
+            <h3>National Cyber Security Index (NCSI)</h3>
+            <div id="chart-NCSI"></div>
+        </div>
+        <div class="chart-box">
+            <h3>Digital Development Level (DDL)</h3>
+            <div id="chart-DDL"></div>
+        </div>
+    </div>
+
+    <script src="js\pie_script.js"></script>
+</body>
+</html>

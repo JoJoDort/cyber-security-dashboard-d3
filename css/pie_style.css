@@ -1,0 +1,77 @@
+body { font-family: 'Segoe UI', sans-serif; margin: 20px; background-color: #f9f9f9; }
+
+.nav-button { 
+    text-decoration: none; background: #2c3e50; color: white; 
+    padding: 8px 15px; border-radius: 4px; display: inline-block; margin-bottom: 20px;
+}
+
+#charts-wrapper {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.chart-box {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    text-align: center;
+    flex: 1;
+    min-width: 300px;
+}
+
+/* Style du conteneur de recherche */
+.search-box input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+/* Liste des toggles avec défilement interne */
+.toggle-list {
+    max-height: 200px;
+    overflow-y: auto;
+    border: 1px solid #eee;
+    padding: 10px;
+    background: #fff;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 8px;
+    border-radius: 5px;
+}
+
+/* Style des Toggles (Switch) */
+.toggle-item {
+    display: flex;
+    align-items: center;
+    font-size: 13px;
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 3px;
+    transition: background 0.2s;
+}
+
+.toggle-item:hover { background: #f0f0f0; }
+
+.toggle-item input { margin-right: 10px; cursor: pointer; }
+
+/* Masquer les pays qui ne correspondent pas à la recherche */
+.toggle-item.hidden { display: none; }
+
+.tooltip {
+    position: absolute;
+    background: rgba(0,0,0,0.85);
+    color: white;
+    padding: 8px 12px;
+    border-radius: 4px;
+    font-size: 12px;
+    visibility: hidden;
+    pointer-events: none;
+    z-index: 1000;
+}

@@ -1,0 +1,44 @@
+body { font-family: 'Segoe UI', sans-serif; margin: 20px; background-color: #f0f2f5; text-align: center; }
+
+#map-container {
+    background: white;
+    margin-top: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    overflow: hidden;
+}
+
+.country {
+    stroke: #fff;
+    stroke-width: 0.5px;
+    cursor: pointer;
+    transition: filter 0.2s;
+}
+
+.country:hover {
+    filter: brightness(0.8);
+    stroke: #333;
+    stroke-width: 1px;
+}
+
+.controls { margin: 20px 0; }
+
+select {
+    padding: 10px 15px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+}
+
+.tooltip {
+    position: absolute;
+    background: rgba(0,0,0,0.9);
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 13px;
+    visibility: hidden;
+    pointer-events: none;
+    z-index: 1000;
+}

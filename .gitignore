@@ -1,0 +1,13 @@
+# --- Système d'exploitation ---
+.DS_Store
+Thumbs.db
+
+# --- Éditeurs de texte / IDE ---
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# --- Logs et fichiers temporaires ---
+*.log
+npm-debug.log*
